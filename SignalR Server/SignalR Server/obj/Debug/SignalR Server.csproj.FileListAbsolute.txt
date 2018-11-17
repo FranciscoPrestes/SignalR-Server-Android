@@ -1,0 +1,46 @@
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\csc.exe
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\vbc.exe
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\VBCSCompiler.exe
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\SignalR Server.dll.config
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\SignalR Server.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\SignalR Server.pdb
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.AspNet.SignalR.Core.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.Owin.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.Owin.Security.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Newtonsoft.Json.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Owin.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Helpers.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Mvc.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Razor.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Webpages.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Webpages.Razor.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.AspNet.SignalR.Core.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.Owin.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Microsoft.Owin.Security.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\Newtonsoft.Json.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Razor.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Webpages.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Webpages.Razor.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Helpers.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\bin\System.Web.Mvc.xml
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\obj\Debug\SignalR Server.csprojResolveAssemblyReference.cache
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\obj\Debug\SignalR Server.dll
+C:\Users\Fisnik\Desktop\ASP .NET\SignalR Server\SignalR Server\obj\Debug\SignalR Server.pdb

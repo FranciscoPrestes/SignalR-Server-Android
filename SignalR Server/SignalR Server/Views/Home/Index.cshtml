@@ -1,72 +1,70 @@
-﻿
-@{
-    ViewBag.Title = "Index";
+﻿@{
+    ViewBag.Title = "ChatHub Mensagem";
     Layout = null;
 }
+<label for="mensagem">Mensagem:</label><input type="text" name="mensagem" id="mensagem" maxlength="100" />
+<div id="chatWindow" style="width: 100%; height: 300px; overflow: scroll; border: 1px solid grey"></div>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title></title>
-    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/chat/Site.css" rel="stylesheet" />
 
-    <style>
-        .container {
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
+<link href="~/Content/chat/themes/base/jquery.ui.core.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.resizable.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.selectable.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.accordion.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.autocomplete.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.button.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.dialog.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.slider.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.tabs.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.datepicker.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.progressbar.css" rel="stylesheet" />
+<link href="~/Content/chat/themes/base/jquery.ui.theme.css" rel="stylesheet" />
 
-    <div class="container text-center">
-        <form class="form-inline">
-            <div class="form-group">
-                <input type="text" class="form-control" placeholder="message" id="text" />
-            </div>
-            <div class="form-group">
-                <input type="button" id="send" class="btn btn-success" value="Send message" />
-            </div>
 
-            <div id="message"></div>
-        </form>
-    </div>
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script src="~/Scripts/jquery.signalR-2.4.0.min.js"></script>
+
+<!-- Referencia para o script de Hub criado automaticamente -->
+<script src="/signalr/hubs" type="text/javascript"></script>
 
 
 
 
-    <script src="~/Scripts/jquery-2.2.1.min.js"></script>
-    <script src="~/Scripts/jquery.signalR-2.2.0.js"></script>
+<script type="text/javascript">
+    $(function () {
+        // Declarando um proxy de referencia ao Hub
+        var chatHub = $.connection.chatHub;
 
+        // Criando a função que será chamada pelo Hub para distribuir as mensagens aos clientes.
+        // Por convenção as chamadas aos métodos são feitas em "camelCase"
+        //chatHub.client.publicarMensagem = function (apelido, msg) {
+        chatHub.client.publicarMensagem = function (msg) {
 
-    <script type="text/javascript">
-        var proxy;
+            let apelido = "Web";
+            // Area do chat
+            var chatWin = $("#chatWindow");
 
-        $(function () {
-            $.connection.hub.logging = true;
+            // Publicando a mensagem no chat
+            chatWin.html(chatWin.html() + "<b>" + apelido + "</b>: " + msg + "<br />");
+        };
 
-            var connection = $.hubConnection();
-            proxy = connection.createHubProxy('ChatHub');
-            proxy.on('SendChatMessage', onNewMessage);
+        // Iniciando a conexão com o Hub
+        $.connection.hub.start();
 
-            $('#send').click(onSend);
+        // Validando o botão enter
+        $(document).keypress(function (e) {
+            if (e.which == 13) {
 
-            connection.start();
+                let apelido = "Ariane";
+
+                // Chamando o método de transmissão de mensagem no Hub
+                chatHub.server.enviarMensagem(apelido, $("#mensagem").val());
+
+                // Limpando o texto da mensagem.
+                $("#mensagem").val("");
+            }
         });
+    });
+    
 
-
-
-        function onNewMessage(message) {
-            var messages = parseInt($('#message').text());
-
-            $('#message').append("<p>" + message + "</p>")
-        };
-
-
-
-        function onSend() {
-            proxy.invoke('Send', $('#text').val());
-        };
-
-    </script>
-
-</body>
-</html>
+</script>
